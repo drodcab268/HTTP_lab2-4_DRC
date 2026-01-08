@@ -29,5 +29,7 @@ a2ensite discovery.sistema.sol.conf
 
 a2enmod auth_basic
 a2enmod auth_digest
+a2enmod authn_file
 
+apachectl configtest
 systemctl restart apache2

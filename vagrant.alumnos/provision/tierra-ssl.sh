@@ -12,7 +12,7 @@ echo "==> Asegurando puerto 443"
 grep -q "Listen 443" /etc/apache2/ports.conf || echo "Listen 443" >> /etc/apache2/ports.conf
 
 echo "==> Copiando VirtualHost HTTPS"
-cp -v /vagrant/config/tierra/ssl/discovery.sistema.sol-ssl.conf \
+cp -v /vagrant/config/tierra/discovery.sistema.sol-ssl.conf \
       /etc/apache2/sites-available/
 
 echo "==> Creando directorio de certificados"
