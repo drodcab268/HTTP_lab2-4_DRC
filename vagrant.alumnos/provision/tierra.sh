@@ -13,7 +13,7 @@ cp -v /vagrant/config/tierra/discovery.sistema.sol.conf \
       /etc/apache2/sites-available/
 
 echo "==> Copiando contenido web"
-cp -rv /vagrant/config/tierra/web/discovery.sistema.sol \
+cp -rv /vagrant/config/tierra/discovery.sistema.sol \
        /var/www/
 
 chown -R www-data:www-data /var/www/discovery.sistema.sol
