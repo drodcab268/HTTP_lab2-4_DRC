@@ -9,12 +9,10 @@ echo "==> Copiando configuración base"
 cp -v /vagrant/config/tierra/apache2.conf /etc/apache2/
 
 echo "==> Copiando VirtualHost"
-cp -v /vagrant/config/tierra/discovery.sistema.sol.conf \
-      /etc/apache2/sites-available/
+cp -v /vagrant/config/tierra/discovery.sistema.sol.conf /etc/apache2/sites-available/
 
 echo "==> Copiando contenido web"
-cp -rv /vagrant/config/tierra/discovery.sistema.sol \
-       /var/www/
+cp -rv /vagrant/config/tierra/discovery.sistema.sol /var/www/
 
 chown -R www-data:www-data /var/www/discovery.sistema.sol
 
